@@ -1,0 +1,15 @@
+.grid {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 40px;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.form-group {
+    padding: 4px;
+}
+
+label {
+    display: flex;
+}

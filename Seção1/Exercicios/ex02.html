@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+
+</head>
+<body>
+
+    <section>
+
+        <h1>Your number is: <span id="number">0</span></h1>
+        <p>Square root of your number: <span id="squareRoot">0</span></p>
+        <p>Your number rounded up: <span id="roundUp">0</span></p>
+        <p>Your number rounded down: <span id="roundDown">0</span></p>
+        <p>Your number with two decimals place: <span id="twoDecimalPlace">0</span></p>
+        <p>The numbers is integer? <span id="int">0</span></p>
+        <p>The number is valid? <span id="nan">0</span></p>
+
+    </section>
+
+    <script>
+
+        let InnerNumber = Number(prompt("Digite um numero"));
+
+        let calcSquareRoot = InnerNumber ** 0.5;
+        let methodCeil = Math.ceil(InnerNumber);
+        let methodFloor = Math.floor(InnerNumber);
+        let methodDecimal = InnerNumber.toFixed(2);
+        let methodInteger = Number.isInteger(InnerNumber);
+        let methodNaN = Number.isNaN(InnerNumber);
+    
+        const selectNumber = document.getElementById("number");
+        number.innerHTML = InnerNumber;
+
+        const selectSquareRoot = document.getElementById("squareRoot");
+        squareRoot.innerHTML = calcSquareRoot;
+
+        const selectRoundUp = document.getElementById("roundUp");
+        roundUp.innerHTML = methodCeil;
+
+        const selectRoundDown = document.getElementById("roundDown");
+        roundDown.innerHTML = methodFloor;
+
+        const selectDecimal = document.getElementById("twoDecimalPlace");
+        twoDecimalPlace.innerHTML = methodDecimal;
+
+        const selectInteger = document.getElementById("int");
+        int.innerHTML = methodInteger;
+
+        const selectNaN = document.getElementById("nan");
+        nan.innerHTML = methodNaN;
+
+    </script>
+
+</body>
+</html>

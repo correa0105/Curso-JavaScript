@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = prompt("Writing your name:");
+        document.body.innerHTML += `Your name: <strong>${name}</strong><br/>`;
+        document.body.innerHTML += `Your name has <strong>${name.length}<strong> letters<br/>`;
+        document.body.innerHTML += `The second letter of your name is <strong>${name[1]}<strong><br/>`;
+        document.body.innerHTML += `What is the first index of the letter "A" in your name? <strong>${name.indexOf("a")}</strong><br/>`;
+        document.body.innerHTML += `What is the last index of the letter "A" in your name? <strong>${name.lastIndexOf("a")}</strong><br/>`;
+        document.body.innerHTML += `The last 3 letters of your name are: <strong>${name.slice(-3, name.length)}</strong><br/>`;
+        document.body.innerHTML += `The words of your name are: <strong>${name.split(" ")}</strong><br/>`;
+        document.body.innerHTML += `Your name in uppercase letters:: <strong>${name.toUpperCase()}</strong><br/>`;
+        document.body.innerHTML += `Your name in lowercase letters: <strong>${name.toLowerCase()}</strong><br/>`;
+    </script>
+</body>
+</html>
