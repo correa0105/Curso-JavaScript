@@ -36,4 +36,4 @@ const double = createMultiplicator(2);                  //ARMAZENA A FUNÇÃO DE
 const triple = createMultiplicator(3);                  //ARMAZENA A FUNÇÃO DE ESCOPO MAIOR COM O VALOR DO MULTIPLICADOR
 const quadruple = createMultiplicator(4);               //ARMAZENA A FUNÇÃO DE ESCOPO MAIOR COM O VALOR DO MULTIPLICADOR
 
-console.log(triple(3));                                    //A FUNÇÃO SE TORNOU UMA CLOSURE E CONSEGUE SE LEMBRAR AONDE FOI CRIADA
+console.log(triple(3));                                 //A FUNÇÃO SE TORNOU UMA CLOSURE E CONSEGUE SE LEMBRAR AONDE FOI CRIADA
