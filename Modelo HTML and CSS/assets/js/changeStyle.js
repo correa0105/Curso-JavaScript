@@ -1,17 +1,15 @@
-const paragraph = document.querySelector(".container-addStyle");
-const textP = paragraph.querySelectorAll("p");
+const paragraph = document.querySelector(".container-addStyle");                           //BUSCA O ELEMENTO QUE TEM A CLASSE ESPECIFICADA E ARMAZENA EM UMA VARIAVEL
+const textP = paragraph.querySelectorAll("p");                                             //BUSCA TODOS ELEMENTOS <P> DA VARIAVEL A CIMA
 
-const styleBackground = getComputedStyle(document.querySelector(".background-orangered"));
-const backgroundImg = styleBackground.backgroundImage;
+const styleBackground = getComputedStyle(document.querySelector(".background-orangered")); //ARMAZENA TODO O STYLE DA CLASSE ESPECIFICADA EM UMA VARIAVEL
+const backgroundImg = styleBackground.backgroundImage;                                     //DOS ESTILOS COMPUTADOS VAI ARMAZENAR EM UMA VARIAVEL O BACKGROUNDIMAGE
 
-console.log(backgroundImg);
+paragraph.addEventListener("submit", function(event) {                                     //ARMAZENA O EVENTO DE ENVIO DE FORMULARIO DA VARIAVEL PARAGRAPH
+event.preventDefault();                                                                    //IMPEDE O CARREGAMENTO DA PAGINA
 
-paragraph.addEventListener("submit", function(event) {
-event.preventDefault(); 
-
-for (let conteud of textP) {
-    conteud.style.backgroundImage = backgroundImg;
-    conteud.style.color = "green";
+for (let conteud of textP) {                                                               //CRIA A VARIAVEL CONTEUDO PARA CADA ELEMENTO P DO PARAGRAFO
+    conteud.style.backgroundImage = backgroundImg;                                         //A VARIAVEL CRIADA RECEBE UMA ALTERAÇÃO NO SEU BACKGROUND IMG
+    conteud.style.color = "green";                                                         //A VARIAVEL CRIADA RECEBE UMA ALTERAÇÃO NA SUA COLOR
 }
 
 });
