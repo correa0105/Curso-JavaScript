@@ -18,13 +18,29 @@ const numbersFilters = numbers.filter((value, index, array) => {console.log(`Val
 
 console.log(numbersFilters);
 
-//CRIA UMA FUNÇÃO QUE RETORNE O NOME COM 5 LETRAS OU MAIS, RETORNE A COM MAIS DE 50 ANOS, RETORNE A PESSOA CUJO NOME TERMINA COM A
+//CRIA UMA FUNÇÃO QUE RETORNE O NOME COM 5 LETRAS OU MAIS OU PESSOA COM MAIS DE 50 ANOS, RETORNE A PESSOA CUJO NOME TERMINA COM A
 
 const people = [ 
     { name: "Lucas", idade: 62 },
-    { name: "Michael", idade: 32 },
+    { name: "Carla", idade: 32 },
     { name: "Guilherme", idade: 20 },
     { name: "Andressa", idade: 17 },
-    { name: "Carlos", idade: 19 },
+    { name: "Joao", idade: 19 },
     { name: "Micaela", idade: 37 },
 ];
+
+const objectConditions = [];
+
+for (let i = 0 ; i < people.length; i++) {
+    if (people[i].name.length >= 6 || people[i].idade >= 50 || people[i].name.toLowerCase().endsWith("a")) {
+        objectConditions.push(people[i]);
+    }
+}
+
+console.log(objectConditions);
+
+//OU
+
+const objectFilter = people.filter(value => value.name.length >= 6 || value.idade >= 50 || value.name.toLowerCase().endsWith("a"));
+
+console.log(objectFilter);
