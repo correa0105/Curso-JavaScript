@@ -24,6 +24,10 @@ const objectNoKey = people.map(object => ({year: object.year}));
 
 console.log(objectNoKey);
 
-const addIdToObject = people.map((object, index) => {object.Id = index; return object});
+const addIdToObject = people.map((object, index) => {
+    const newObj = {... object};                                                    //SE NÃO FOSSE CRIADO UM NOVO OBJETO SERIA ALTERADO O OBJETO ORIGINAL
+    newObj.Id = (index + 1) * 1000; return newObj});
 
 console.log(addIdToObject);
+
+console.log(people);

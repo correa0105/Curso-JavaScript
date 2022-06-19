@@ -44,3 +44,8 @@ console.log(objectConditions);
 const objectFilter = people.filter(value => value.name.length >= 6 || value.idade >= 50 || value.name.toLowerCase().endsWith("a"));
 
 console.log(objectFilter);
+
+//FUNÇÃO QUE RETORNE OS NUMEROS PARES DO ARRAY
+
+const evenNumbers = numbers.filter(value => value % 2 == 0);
+console.log(evenNumbers);
