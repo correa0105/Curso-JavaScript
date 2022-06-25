@@ -41,7 +41,7 @@ function createCalculator() {                                                   
             });
         },
 
-        btnToDisplay(value) {                                                               //FUNÇÃO QUE ENVIA O VALOR PARA O DISPLAU
+        btnToDisplay(value) {                                                               //FUNÇÃO QUE ENVIA O VALOR PARA O DISPLAY
             this.display.value += value;                                                    //DISPLAY RECEBE OS DADOS QUE JA TEM MAIS O VALOR
         },
         
