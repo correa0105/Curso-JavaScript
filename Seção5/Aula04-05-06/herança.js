@@ -42,8 +42,6 @@ constructTShirt.prototype.increase = function (percent) {                   //SO
 constructCup.prototype = Object.create(Product.prototype);                  //APONTAR O PROTOTYPE DE PRODUCT PARA O CUP
 constructCup.prototype.constructor = constructCup;                          //COLOCANDO O NOME DO OBJETO COM O NOME ORIGINAL DO CONSTRUTOR
 
-
-
 const tShirt = new constructTShirt("Regata", 7.5, "Vermelha");
 const cup = new constructCup("Caneca", 4.30, "Branca", 10);
 
