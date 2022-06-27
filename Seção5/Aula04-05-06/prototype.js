@@ -45,5 +45,15 @@ Product.prototype.increases = function(percent) {
 
 const product1 = new Product("T-Shirt", 50);
 
+const product2 = {
+    nameproduct: "Caneca",
+    price: 15
+};
+
+Object.setPrototypeOf(product2, Product.prototype);
+
+product2.discount(20);
 product1.discount(20);
+
 console.log(product1);
+console.log(product2);
