@@ -442,3 +442,41 @@ h6 {
 .btnCalculator:hover {
     background-color: #bebaba;
 }
+
+/* --------------------------- */
+
+.option-six-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(112, 153, 241, 0.342);
+}
+
+.option-six-content a {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* --------------------------- */
+
+.option-seven-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerAxios {
+    padding: 5rem;
+    background: #336;
+    border-radius: 1rem;
+}
+
+.containerAxios table {
+    width: 100%;
+}
+
+.containerAxios table td{
+    font-size: 2rem;
+}

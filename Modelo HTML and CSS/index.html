@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/hover.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@500&display=swap"
         rel="stylesheet">
     <title>Test JS</title>
 
-    <script defer src="assets/js/imcCalculation.js"></script>
-    <script defer src="assets/js/date.js"></script>
-    <script defer src="assets/js/timer.js"></script>
-    <script defer src="assets/js/changeStyle.js"></script>
-    <script defer src="assets/js/insertTextFor.js"></script>
-    <script defer src="assets/js/taskList.js"></script>
-    <script defer src="assets/js/calculator.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script defer src="./assets/js/imcCalculation.js"></script>
+    <script defer src="./assets/js/date.js"></script>
+    <script defer src="./assets/js/timer.js"></script>
+    <script defer src="./assets/js/changeStyle.js"></script>
+    <script defer src="./assets/js/insertTextFor.js"></script>
+    <script defer src="./assets/js/taskList.js"></script>
+    <script defer src="./assets/js/calculator.js"></script>
+<!--     <script defer src="assets/js/XMLHttpRequest.js"></script> -->
+    <script defer src="./assets/js/fetchAPI.js"></script>
+    <script defer src="./assets/js/fetchAPIAxios.js"></script>    
 
 </head>
 
@@ -32,6 +36,9 @@
                     <li class="hvr-grow hvr-underline-from-center"><a href="#OptionTwo">Option 2</a></li>
                     <li class="hvr-grow hvr-underline-from-center"><a href="#OptionThree">Option 3</a></li>
                     <li class="hvr-grow hvr-underline-from-center"><a href="#OptionFour">Option 4</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionFive">Option 5</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionSix">Option 6</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionSeven">Option 7</a></li>
                 </ul>
             </nav>
         </div>
@@ -181,6 +188,26 @@
                         <td><button class="btnCalculator btn-equal">=</button></td>
                     </tr>
                 </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-orangered" id="OptionSix">
+        <div class="main-content section option-six-content">
+            <h1>TESTE AJAX</h1>
+            <a href="pageTest.html">PAGE TEST</a>
+            <a href="pageTest1.html">PAGE TEST 1</a>
+            <a href="pageTest2.html">PAGE TEST 2</a>
+
+            <div class="resultAjax"></div>
+        </div>
+    </section>
+
+    <section class="background-gray" id="OptionSeven">
+        <div class="main-content section option-seven-content">
+            <div class="containerAxios">
+                <h1>TESTE DE FETCH API E AXIOS</h1>
+                <div class="resultAxios"></div>
             </div>
         </div>
     </section>

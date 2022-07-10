@@ -30,7 +30,8 @@ const promises = [
 Promise.all(promises)               //EXIBE TODAS PROMISES, SE NENHUMA FALHAR, NA ORDEM DO ARRAY
     .then((value) => {
         console.log(value);
-    }).catch((error) => {
+    })
+    .catch((error) => {
         console.log(error);
     })
 
@@ -44,7 +45,7 @@ Promise.race(promises)              //FAZ UMA CORRIDA E EXIBE A QUE EXECUTOU PRI
 function downPage() {
     const hasCache = true;
 
-    if(hasCache) {
+    if (hasCache) {
         return Promise.resolve("Pagina em Cache")
     } else {
         return aleatoryOrder("Baixei a Pagina", rand(1, 3));
