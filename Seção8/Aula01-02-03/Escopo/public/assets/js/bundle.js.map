@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;;;;;;;AAAA,IAAMA,SAAS,GAAG,OAAlB;AACA,IAAMC,GAAG,GAAG;EAAEA,GAAG,EAAHA;AAAF,CAAZ;;AACA,IAAMC,MAAM,qBAAQD,GAAR,CAAZ,C","sources":["webpack://escopo/./src/main.js"],"sourcesContent":["const firstName = \"Lucas\";\r\nconst obj = { obj };\r\nconst newObj = { ...obj };"],"names":["firstName","obj","newObj"],"sourceRoot":""}
