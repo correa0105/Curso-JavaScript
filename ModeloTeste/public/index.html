@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@500&display=swap" rel="stylesheet">
+        
+    <title>Test JS</title>
+
+    <script defer src="./assets/js/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+    <!--<script defer src="./assets/js/imcCalculation.js"></script>
+    <script defer src="./assets/js/date.js"></script>
+    <script defer src="./assets/js/timer.js"></script>
+    <script defer src="./assets/js/changeStyle.js"></script>
+    <script defer src="./assets/js/insertTextFor.js"></script>
+    <script defer src="./assets/js/taskList.js"></script>
+    <script defer src="./assets/js/calculator.js"></script>
+    <script defer src="assets/js/XMLHttpRequest.js"></script> COMENTAR ISSO CASO DESCOMENTE O BLOCO
+    <script defer src="./assets/js/fetchAPI.js"></script>
+    <script defer src="./assets/js/fetchAPIAxios.js"></script>-->
+
+</head>
+
+<body>
+
+    <aside class="menu">
+        <div class="main-content menu-content">
+            <h1>Layot CSS - Test JS</h1>
+            <nav>
+                <ul>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionOne">Option 1</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionTwo">Option 2</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionThree">Option 3</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionFour">Option 4</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionFive">Option 5</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionSix">Option 6</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionSeven">Option 7</a></li>
+                    <li class="hvr-grow hvr-underline-from-center"><a href="#OptionEight">Option 8</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section class="background-gray" id="OptionOne">
+        <div class="section main-content option-one-content">
+            <div class="imc-calculation">
+                <div class="grid-legend">
+                    <div class="imc">
+                        <h1>IMC</h1>
+                        <p>Menos do que 18,5</p>
+                        <p>Entre 18,5 e 24,9</p>
+                        <p>Entre 25 e 29,9</p>
+                        <p>Entre 30 e 34,9</p>
+                        <p>Entre 35 e 39,9</p>
+                        <p>Mais do que 40</p>
+                    </div>
+                    <div class="result">
+                        <h1>Resultado</h1>
+                        <p>Abaixo do peso normal</p>
+                        <p>Peso normal</p>
+                        <p>Sobrepeso</p>
+                        <p>Obesidade grau 1</p>
+                        <p>Obesidade grau 2</p>
+                        <p>Obesidade grau 3</p>
+                    </div>
+                </div>
+                <form class="grid-calculation" action="" method="get">
+                    <div class="form-group">
+                        <label>Peso</label>
+                        <input type="text" class="weight">
+                    </div>
+                    <div class="form-group">
+                        <label>Altura</label>
+                        <input type="text" class="height">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label>Entry 3</label>
+                        <input type="text" class="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Entry 4</label>
+                        <input type="text" class="age">
+                    </div> -->
+                    <div class="form-group button-submit">
+                        <button>Calcular IMC</button>
+                    </div>
+                </form>
+                <div class="result-imc">
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <section class="background-orangered" id="OptionTwo">
+        <div class="main-content option-two-content">
+            <article class="date">
+                <h1></h1>
+                <h2>O relógio a cima foi feito utilizando recursos ultrapassados para data, como Switch Case e Funções, no intuito de aprendizado, e por isso ele não atualiza
+                    em tempo real
+                </h2>
+            </article>
+            <article class="timer">
+                <h1>MEU TIMER</h1>
+                <p class="clock">00:00:00</p>
+                <div class="timerButton">
+                    <button class="start">Iniciar</button>
+                    <button class="pause">Pausar</button>
+                    <button class="reset">Zerar</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="background-gray" id="OptionThree">
+        <div class="section main-content option-three-content">
+            <div class="container-for">
+                <h1>INSERINDO TEXTO COM FOR</h1>
+                <p>Estou aprendendo inserção de informações utilizando estrutura de repetição</p>
+                    <form class="insertText-button" action="" method="get">
+                        <button>Inserir Texto</button>
+                    </form>
+                <div class="textInsertFor"></div>
+            </div>
+            <div class="container-addStyle">
+                <h1>SUBSTITUINDO O STYLE USANDO JAVASCRIPT</h1>
+                    <form class="insertText-button" action="" method="get">
+                        <button>SUBSTITUIR STYLE</button>
+                    </form>
+                <p>TEXO 1</p>
+                <p>TEXO 2</p>
+                <p>TEXO 3</p>
+                <p>TEXO 4</p>
+                <div class="textInsertFor"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-orangered" id="OptionFour">
+        <div class="main-content section option-four-content">
+            <h1>LISTA DE TAREFAS</h1>
+                <div class="inputTask">
+                    <input type="text" class="input-newTask">
+                    <button class="btn-AddTask">ADICIONAR TAREFA</button>
+                </div>
+            <ul class="tasks"></ul>
+        </div>
+    </section>
+
+    <section class="background-gray" id="OptionFive">
+        <div class="main-content section option-four-content">
+            <div class="calculator">
+                <h1>Calculadora JS</h1>
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" class="display"></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btnCalculator btn-clear">C</button></td>
+                        <td><button class="btnCalculator btn-caracter">(</button></td>
+                        <td><button class="btnCalculator btn-caracter">)</button></td>
+                        <td><button class="btnCalculator btn-caracter">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btnCalculator btn-caracter">7</button></td>
+                        <td><button class="btnCalculator btn-caracter">8</button></td>
+                        <td><button class="btnCalculator btn-caracter">9</button></td>
+                        <td><button class="btnCalculator btn-caracter">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btnCalculator btn-caracter">4</button></td>
+                        <td><button class="btnCalculator btn-caracter">5</button></td>
+                        <td><button class="btnCalculator btn-caracter">6</button></td>
+                        <td><button class="btnCalculator btn-caracter">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btnCalculator btn-caracter">1</button></td>
+                        <td><button class="btnCalculator btn-caracter">2</button></td>
+                        <td><button class="btnCalculator btn-caracter">3</button></td>
+                        <td><button class="btnCalculator btn-caracter">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btnCalculator btn-caracter">.</button></td>
+                        <td><button class="btnCalculator btn-caracter">0</button></td>
+                        <td><button class="btnCalculator btn-backspace">⇦</button></td>
+                        <td><button class="btnCalculator btn-equal">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-orangered" id="OptionSix">
+        <div class="main-content section option-six-content">
+            <h1>TESTE AJAX</h1>
+            <a href="pageTest.html">PAGE TEST</a>
+            <a href="pageTest1.html">PAGE TEST 1</a>
+            <a href="pageTest2.html">PAGE TEST 2</a>
+
+            <div class="resultAjax"></div>
+        </div>
+    </section>
+
+    <section class="background-gray" id="OptionSeven">
+        <div class="main-content section option-seven-content">
+            <div class="containerAxios">
+                <h1>TESTE DE FETCH API E AXIOS</h1>
+                <div class="resultAxios"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-orangered" id="OptionEight">
+        <div class="main-content section option-eight-content">
+            <h1>GERADOR DE CPF</h1>
+            <div class="containerCPF">
+                
+            </div>
+            <button class="cpfButton">GERAR CPF</button>
+        </div>
+    </section>
+    
+</body>
+
+</html>
